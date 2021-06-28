@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="DarkMode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charyn" translatesAutoresizingMaskIntoConstraints="NO" id="50R-q0-CDh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="r0q-3I-3va"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="haY-zO-Xgf">
+                                <rect key="frame" x="20" y="78" width="90" height="90"/>
+                                <color key="tintColor" red="1" green="0.48802229759999999" blue="0.098748321489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="3m9-y9-RDd"/>
+                                    <constraint firstAttribute="height" constant="90" id="NJW-Rm-RXR"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Nv-Ug-rAG">
+                                <rect key="frame" x="20" y="410" width="374" height="388"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Величественный каньон настолько популярен, что туроператоры создали специальные туры, которые позволяют посмотреть на Чарынский каньон во всей его красе. Как правило, все экскурсии в каньон начинаются из города Алматы. По пути на экскурсию туристы получают много новой и интересной информации, благодаря которой узнают о традициях казахского народа, об истории, знакомятся с особенностями природы. Обзорная экскурсия по каньону очень насыщенная и увлекательная, в ходе нее гид расскажет об особенностях природной достопримечательности, важных событиях и о его богатой природе.
+
+Экскурсии чаще всего начинаются с самого утра и длятся порядка 12 часов. Туры включают в себя трансфер на комфортабельном современном автобусе, услуги гида-экскурсовода, обзорную экскурсионную пешую прогулку по каньону. Также в течение всего дня туристы смогут поесть в кафе или ресторанах. Экскурсии также включают в себя посещение таких известных на территории Чарынского каньона мест, как «Долина замков, «Ясеневая роща» и многое другое.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чарынский каньон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uny-5C-bnl">
+                                <rect key="frame" x="20" y="352" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="frk-rT-xR5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-VS-78Z">
+                                <rect key="frame" x="113" y="815" width="189" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="0tB-o6-olb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Узнать больше"/>
+                                <connections>
+                                    <segue destination="9Lr-ss-KNz" kind="show" id="TUS-94-rhu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1mq-VS-78Z" secondAttribute="trailing" constant="112" id="2FD-7B-TI5"/>
+                            <constraint firstItem="1mq-VS-78Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="33F-yl-OqA"/>
+                            <constraint firstItem="haY-zO-Xgf" firstAttribute="leading" secondItem="50R-q0-CDh" secondAttribute="leading" constant="20" id="DAZ-CY-bL3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Nv-Ug-rAG" secondAttribute="trailing" constant="20" id="DDS-Hi-zmq"/>
+                            <constraint firstItem="1mq-VS-78Z" firstAttribute="top" secondItem="1Nv-Ug-rAG" secondAttribute="bottom" constant="17" id="Jky-Jc-KEr"/>
+                            <constraint firstItem="uny-5C-bnl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YL0-0F-wdi"/>
+                            <constraint firstItem="1Nv-Ug-rAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aFi-as-8a0"/>
+                            <constraint firstItem="50R-q0-CDh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aYm-jq-blC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1mq-VS-78Z" secondAttribute="bottom" id="dBS-om-oh4"/>
+                            <constraint firstItem="50R-q0-CDh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="msE-MT-SeU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="50R-q0-CDh" secondAttribute="trailing" id="nQd-zg-OSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uny-5C-bnl" secondAttribute="trailing" constant="20" id="olU-5k-dI8"/>
+                            <constraint firstItem="uny-5C-bnl" firstAttribute="top" secondItem="50R-q0-CDh" secondAttribute="bottom" constant="8" id="qli-TH-UvK"/>
+                            <constraint firstItem="haY-zO-Xgf" firstAttribute="top" secondItem="50R-q0-CDh" secondAttribute="top" constant="34" id="sWu-VM-09y"/>
+                            <constraint firstItem="1Nv-Ug-rAG" firstAttribute="top" secondItem="uny-5C-bnl" secondAttribute="bottom" constant="8" symbolic="YES" id="uXM-kh-zlt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="EIb-UL-7c3">
+            <objects>
+                <viewController id="4Zo-rF-1Mx" customClass="LearnMoreViewController" customModule="DarkMode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XC4-cv-sml">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oG9-aQ-Xdi">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="7yy-O7-jom">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="1bE-dL-Ezq"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charyn" translatesAutoresizingMaskIntoConstraints="NO" id="41l-ek-Khf">
+                                <rect key="frame" x="0.0" y="143" width="414" height="699"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнать больше" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-KD-Oj0">
+                                <rect key="frame" x="20" y="86" width="374" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="ubD-FS-1yj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJn-aN-RxR">
+                                <rect key="frame" x="0.0" y="143" width="414" height="699"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p2X-LW-dhq">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="699"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibrant Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-L5-4BF">
+                                            <rect key="frame" x="20" y="20" width="225.5" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="yux-1s-CZW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <nil key="textColor"/>
+                                            <color key="highlightedColor" systemColor="labelColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="UdS-yW-Zw0">
+                                            <rect key="frame" x="314" y="20" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="KlK-MJ-QYV"/>
+                                                <constraint firstAttribute="width" constant="80" id="aB3-WY-Ndh"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="XOc-L5-4BF" firstAttribute="leading" secondItem="bJn-aN-RxR" secondAttribute="leading" constant="20" id="Axp-h7-Rci"/>
+                                    <constraint firstItem="XOc-L5-4BF" firstAttribute="top" secondItem="bJn-aN-RxR" secondAttribute="top" constant="20" id="Evq-HP-E3K"/>
+                                    <constraint firstAttribute="trailing" secondItem="UdS-yW-Zw0" secondAttribute="trailing" constant="20" id="Hac-I7-7ew"/>
+                                    <constraint firstItem="UdS-yW-Zw0" firstAttribute="top" secondItem="bJn-aN-RxR" secondAttribute="top" constant="20" id="YPO-hL-u8r"/>
+                                </constraints>
+                                <vibrancyEffect style="secondaryFill">
+                                    <blurEffect style="systemThinMaterial"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PS1-Xm-NnZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yw5-KD-Oj0" firstAttribute="leading" secondItem="PS1-Xm-NnZ" secondAttribute="leading" constant="20" id="9yf-BN-rcl"/>
+                            <constraint firstItem="41l-ek-Khf" firstAttribute="top" secondItem="Yw5-KD-Oj0" secondAttribute="bottom" constant="8" id="B9h-F5-1tk"/>
+                            <constraint firstItem="PS1-Xm-NnZ" firstAttribute="trailing" secondItem="bJn-aN-RxR" secondAttribute="trailing" id="Mcf-eY-HMe"/>
+                            <constraint firstItem="bJn-aN-RxR" firstAttribute="leading" secondItem="PS1-Xm-NnZ" secondAttribute="leading" id="OmC-dQ-rhu"/>
+                            <constraint firstAttribute="bottom" secondItem="41l-ek-Khf" secondAttribute="bottom" id="QQ8-N9-YW0"/>
+                            <constraint firstItem="41l-ek-Khf" firstAttribute="leading" secondItem="PS1-Xm-NnZ" secondAttribute="leading" id="RAF-VI-6hh"/>
+                            <constraint firstItem="Yw5-KD-Oj0" firstAttribute="top" secondItem="PS1-Xm-NnZ" secondAttribute="top" constant="30" id="Zpt-f0-bgS"/>
+                            <constraint firstItem="bJn-aN-RxR" firstAttribute="top" secondItem="Yw5-KD-Oj0" secondAttribute="bottom" constant="8" id="fW9-IL-aEP"/>
+                            <constraint firstItem="PS1-Xm-NnZ" firstAttribute="bottom" secondItem="bJn-aN-RxR" secondAttribute="bottom" constant="-34" id="ki8-5Y-yQx"/>
+                            <constraint firstItem="41l-ek-Khf" firstAttribute="trailing" secondItem="PS1-Xm-NnZ" secondAttribute="trailing" id="knB-P8-0ti"/>
+                            <constraint firstItem="PS1-Xm-NnZ" firstAttribute="trailing" secondItem="Yw5-KD-Oj0" secondAttribute="trailing" constant="20" id="lCe-BX-zfL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="r5Z-R1-KJ2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="E7b-1p-Xas">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="4Zo-rF-1Mx" id="4FU-zw-iTt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZW-QY-8LB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786.9565217391305" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8be-W2-eJc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Lr-ss-KNz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="F9p-fa-p33"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BCP-II-5dQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Zo-rF-1Mx" kind="relationship" relationship="rootViewController" id="9Mq-0I-kOb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQV-a9-DUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="charyn" width="1740" height="979"/>
+        <image name="star" width="128" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
